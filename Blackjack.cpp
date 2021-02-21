@@ -45,10 +45,6 @@ bool Blackjack::doubleDown(double *b) {
 		return false;
 }	
 
-//void Blackjack::split() {
-	//Hand playerHand2 = playerHand;
-//}
-
 
 double Blackjack::play(double bet){
 	
@@ -68,7 +64,6 @@ double Blackjack::play(double bet){
 		playerMoney = playerMoney + bet*1.5;
 	}
 	else {
-		//split();
 		bool DD = doubleDown(&bet);
 		if (DD)
 			goto dbldwn; //If player chooses to double down don't query him
