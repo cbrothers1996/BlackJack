@@ -21,7 +21,6 @@ class Blackjack
                                 //   entered, then return that choice as a Hit_or_Stand. 
 	bool doubleDown(double* bet); //Player can double down if he only has two cards which will double his bet 
 								  //but only allow his hand to be dealt one additional card before being forced to stand
-	void split();
        
 
   public:
