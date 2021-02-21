@@ -22,13 +22,12 @@ private:
    std::string hand_holder;  // Holds either "Player" or "Dealer"
 
    void updateValue();  // Private member function that updates the hand's value.
-                        //   You must write an implementation for this function.
-                        //   It should be called every time you add a card.
+                        //   It should be called every time a card is added.
 
 public:
    explicit Hand(std::string);  // Constructor, sets hand_holder.  
    ~Hand();  //  Destructor.  Deallocates all cards.  
-   Hand & operator++();  //  Adds a randomly chosen card to the hand.  It must do so using
+   Hand & operator++();  //  Adds a randomly chosen card to the hand.  It does so using
                          //   a random number generator, and must use the command 'new'
                          //   to dynamically allocate a new Card. 
 //  Below are a set of overloaded operators for comparing the value of a Hand to the 
@@ -41,7 +40,7 @@ public:
    bool operator==(int rhs) const;
    void printHand();  //  This function prints the cards in the hand, and the total
                       //    value of the hand.   
-   void printFirstCard();  // This function should print only the first card in the hand 
+   void printFirstCard();  // This function prints only the first card in the hand 
                            //  (used for dealer). 
 
 //   It is necessary to write our own copy constructor because of the dynamically
